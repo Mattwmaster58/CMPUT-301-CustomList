@@ -5,9 +5,11 @@ import com.example.simpleparadox.listycity.CustomList;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
 
 import java.util.ArrayList;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class TestCustomList {
     private CustomList list;
 
