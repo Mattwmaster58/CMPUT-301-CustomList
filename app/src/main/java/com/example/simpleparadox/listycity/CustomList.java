@@ -65,4 +65,14 @@ public class CustomList extends ArrayAdapter<City> {
         }
         return false;
     }
+
+    public void deleteCity(City city) {
+        for (int i = 0; i < cities.size(); i++) {
+            if (cities.get(i).getCityName().equals(city.getCityName())
+                    && cities.get(i).getProvinceName().equals(city.getProvinceName())) {
+                cities.remove(i);
+                break;
+            }
+        }
+    }
 }
